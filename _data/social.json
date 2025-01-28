@@ -1,15 +1,5 @@
 [
   {
-    "name": "Github",
-    "link": "https://github.com/lukosejoseph007",
-    "image": "images/social/github.svg"
-  },
-  {
-    "name": "Twitter",
-    "link": "https://x.com/lukose_joseph",
-    "image": "images/social/twitter.svg"
-  },
-  {
     "name": "Email",
     "link": "mailto:lukosejoseph007@gmail.com",
     "image": "images/social/email.svg"
