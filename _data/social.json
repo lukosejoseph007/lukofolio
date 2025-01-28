@@ -1,33 +1,22 @@
 [
   {
     "name": "Github",
-    "link": "https://github.com/zerostaticthemes/jekyll-serif-theme",
+    "link": "https://github.com/lukosejoseph007",
     "image": "images/social/github.svg"
   },
   {
     "name": "Twitter",
-    "link": "https://twitter.com/zerostaticio",
+    "link": "https://x.com/lukose_joseph",
     "image": "images/social/twitter.svg"
   },
   {
-      "name": "Facebook",
-      "link": "https://facebook.com",
-      "image": "images/social/facebook.svg"
+    "name": "Email",
+    "link": "mailto:lukosejoseph007@gmail.com",
+    "image": "images/social/email.svg"
   },
   {
-      "name": "Email",
-      "link": "mailto:ekyllserif@example.com ",
-      "image": "images/social/email.svg"
-  },
-  {
-      "name": "Instagram",
-      "link": "https://instagram.com",
-      "image": "images/social/instagram.svg"
-  },
-  {
-      "name": "Discord",
-      "link": "https://discord.com",
-      "image": "images/social/discord.svg"
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/lukose-joseph/",
+    "image": "images/social/linkedin.svg"
   }
-
 ]

@@ -1,0 +1,17 @@
+---
+layout: page
+title: Blog Section
+permalink: /blog/
+---
+
+![Blog Cover Image](/images/illustrations/blog.svg)
+
+Welcome to the Blog section. Here you will find insightful articles that are aimed for your organizational learning & development initiatives and transformations.
+
+{% for blog in site.blog %}
+<div class="post">
+  <h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2>
+  {% if blog.author %}<p class="post-meta">By {{ blog.author }} • {{ blog.date | date: "%B %d, %Y" }}</p>{% endif %}
+  {{ blog.excerpt }}
+</div>
+{% endfor %}

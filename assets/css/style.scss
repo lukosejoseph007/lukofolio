@@ -2,13 +2,21 @@
 ---
 
 // Colors
-$primary: #e5261f;
-$primary-dark: #a01b16;
-$secondary: #f88379;
-$black: #2f2f41;
-$white: #ffffff;
-$white-offset: #fff6f8;
-$steel: #5c5a5a;
+// $primary: #e5261f;
+// $primary-dark: #a01b16;
+// $secondary: #f88379;
+// $black: #2f2f41;
+// $white: #ffffff;
+// $white-offset: #fff6f8;
+// $steel: #5c5a5a;
+
+$primary: #6C5CE7;        // A soft, futuristic purple
+$primary-dark: #4834D4;   // A deeper purple for contrast
+$secondary: #00CEC9;      // A muted teal for a modern accent
+$black: #2D3436;          // A dark gray instead of pure black
+$white: #FDFDFD;          // A slightly off-white to reduce harshness
+$white-offset: #F5F6FA;   // A cool, soft off-white
+$steel: #636E72;          // A medium gray for a modern, metallic feel
 
 // Links
 $link-color: $primary;
@@ -100,6 +108,8 @@ $sub-footer-text-color: $white;
 @import "components/strip";
 @import "components/feature";
 @import "components/social";
+// @import "components/categories";
+
 // @import "components/fonts"; // Uncomment this line to self host font
 
 // Pages
