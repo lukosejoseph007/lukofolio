@@ -9,7 +9,7 @@ excerpt: "This chapter introduces a systematic approach to instructional design,
 ## Introduction
 This chapter introduces a systematic approach to instructional design, emphasizing the importance of performance and practical application. It draws upon the work of thought leaders in performance improvement and instructional design. The methodology presented here focuses on **aligning learning activities with desired performance outcomes**, ensuring that instruction is relevant, effective, and contributes to real-world competence. This approach emphasizes the need to move beyond simply delivering content and instead focuses on **creating learning experiences that transfer to the job** and have a positive impact on performance.
 
-![Reading Image Illustration](/lukofolio/images/illustrations/performance.svg)
+![Performance Image Illustration](/lukofolio/images/illustrations/performance.svg)
 
 ## Key Concepts
 
@@ -81,5 +81,3 @@ Performance-based lesson mapping is a powerful tool for designing effective lear
 ## Further Reading
 - Wallace, Guy W. (1999). *The Handbook of Training and Measurement Methods.*
 - Wallace, Guy W. (2022). *Conducting Performance-Based Instructional Analysis Throughout the ADDIE-like Process.*
-
-This approach to lesson mapping was developed and refined over decades of practice and is intended to serve as a starting point for a rigorous instructional design approach. It may be adapted to meet the needs of specific contexts.
