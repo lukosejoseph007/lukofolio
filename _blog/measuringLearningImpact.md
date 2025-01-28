@@ -9,7 +9,7 @@ excerpt: "Measuring learning impact is essential for L&D to demonstrate its valu
 ## Introduction
 In the dynamic field of Learning Experience Design (LXD), it is essential not only to create engaging and effective learning experiences but also to demonstrate the value and impact of these experiences on the learners and the overall organization. This chapter explores the critical role of measurement in L&D, focusing on how to effectively assess the impact of learning interventions and calculate their return on investment (ROI). Drawing on insights from industry practice, we will delve into various strategies, models, and technologies to equip LXD professionals with the tools to quantify the effectiveness of their work.
 
-![Reading Image Illustration](/images/illustrations/measure-impact.svg)
+![Reading Image Illustration]({{ site.baseurl }}/images/illustrations/measure-impact.svg)
 
 ## The Challenge: Why Measuring Learning Impact is Difficult
 Many Learning and Development (L&D) teams face significant hurdles when it comes to demonstrating the impact of their work. These challenges often stem from a variety of factors, including:
