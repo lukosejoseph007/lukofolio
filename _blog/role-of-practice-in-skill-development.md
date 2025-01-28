@@ -12,7 +12,7 @@ This chapter explores the critical role of practice in skill development, emphas
 ![Practice Skills Illustration](/lukofolio/images/illustrations/practice-skills.svg)
 
 ## The Importance of Practice Design
-The sources make it clear that practice is essential for skill development. However, not all practice is created equal. Effective practice involves carefully designed experiences that facilitate skill acquisition and proficiency. It's not just about doing something repeatedly; it’s about how you do it and what you do it with. The main question to ask when determining if something is a skill is whether it's reasonable to think someone could be proficient without practice. If the answer is no, then it is a skill and it needs practice.
+Beyond any doubts, it is clear that practice is essential for skill development. However, not all practice is created equal. Effective practice involves carefully designed experiences that facilitate skill acquisition and proficiency. It's not just about doing something repeatedly; it’s about how you do it and what you do it with. The main question to ask when determining if something is a skill is whether it's reasonable to think someone could be proficient without practice. If the answer is no, then it is a skill and it needs practice.
 
 Skills are defined as areas where people need to practice to develop proficiency and where there is more than one right answer. Skills often involve judgment, decision-making, and variability. Skills are not procedural or knowledge-based activities. If the activity is a procedure, it is not a skill. Skills often require repeated exposure to different situations to understand the underlying principles.
 

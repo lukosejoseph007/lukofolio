@@ -1,7 +1,7 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "Free Strategy Session",
+    "description": "Start with a no-obligation consultation to identify your IT training priorities and build a roadmap.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Certified Expertise",
+    "description": "Extensive experience designing IT learning programs, with certifications in cloud architecture (AWS/Azure) and cybersecurity (CISSP)",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
@@ -18,8 +18,8 @@
     }
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Compliance-Aligned Training",
+    "description": "Programs tailored to meet GDPR, ISO 27001, and SOC 2 standards, minimizing risk while keeping teams engaged.",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,

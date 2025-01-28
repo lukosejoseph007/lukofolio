@@ -7,6 +7,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# L&D solutions that make your business efficient
+# Build an IT Workforce Ready for Tomorrow’s Challenges
 
-Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.
+Transform technical learning into business results with tailored programs that close skill gaps, reduce risk, and accelerate productivity. From cloud migration to cybersecurity—I design actionable training that aligns with your business goals.
