@@ -1,0 +1,49 @@
+.breadcrumb {
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif, -apple-system;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  a {
+    color: $primary;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // Style for the last item (current page)
+  span:last-child {
+    color: $black;
+  }
+
+  span.separator {
+    color: #b2bec3;
+    margin: 0 8px;
+  }
+
+  // Remove the last separator
+  span.separator:last-child {
+    display: none;
+  }
+}
+// Additional post page styles
+.post-single {
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .meta {
+    color: #636E72;
+    font-size: 14px;
+    margin-bottom: 30px;
+    
+    .date, .author {
+      margin-right: 15px;
+    }
+  }
+}

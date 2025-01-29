@@ -15,6 +15,6 @@ Welcome to the Blog section. Here you will find insightful articles that are aim
   {% if blog.author %}
     <p class="post-meta">By {{ blog.author }} • {{ blog.date | date: "%B %d, %Y" }}</p>
   {% endif %}
-  {{ blog.excerpt }}
+  <p class="post-excerpt">{{ blog.excerpt }}</p>
 </div>
 {% endfor %}

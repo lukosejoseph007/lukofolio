@@ -7,7 +7,11 @@ bodyClass: "page-post"
     <div class="row justify-content-start">
         <div class="col-12 col-md-8">
             <div class="breadcrumb">
-                <a href="{{ '/blog/' | relative_url }}">Blog</a> > {{ page.title }}
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <span class="separator">/</span>
+                <a href="{{ '/blog/' | relative_url }}">Blog</a>
+                <span class="separator">/</span>
+                <span>{{ page.title }}</span>
             </div>
             <br>
             <div class="post post-single">
