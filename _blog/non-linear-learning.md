@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog #5: Why is Learning Non-Linear"
+title: "Why is Learning Non-Linear"
 date: 2024-2-27
 author: Lukose Joseph
 excerpt: "In the field of Learning Experience Design (LXD), it’s tempting to envision the learning journey as a straight path from point A to point B. However, the reality is far more complex and unpredictable..."

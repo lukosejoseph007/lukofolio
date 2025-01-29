@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog #8: The Role of Practice in Skill Development"
+title: "The Role of Practice in Skill Development"
 date: 2024-04-16
 author: Lukose Joseph
 excerpt: "This chapter explores the critical role of practice in skill development, emphasizing that effective practice goes beyond mere repetition. It delves into the importance of designing practice intervals, varied examples, and real-world simulations to enhance learning and skill mastery..."

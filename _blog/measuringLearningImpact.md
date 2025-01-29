@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog #1: Demonstrating the Value of Learning: Measuring Impact and ROI in L&D"
+title: "Demonstrating the Value of Learning: Measuring Impact and ROI in L&D"
 date: 2023-10-01
 author: Lukose Joseph
 excerpt: "Measuring learning impact is essential for L&D to demonstrate its value and ensure initiatives align with business goals. The Kirkpatrick Model provides a framework, moving from learner reaction to business results. Technology such as LMS and AI tools can automate data collection and analysis to make measurement more efficient and effective..."

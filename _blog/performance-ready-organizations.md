@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog #2: The Shift to Performance-Ready Learning: A New Era for Learning and Development"
+title: "The Shift to Performance-Ready Learning: A New Era for Learning and Development"
 date: 2024-01-04
 author: Lukose Joseph
 excerpt: "The learning and development (L&D) field is changing, moving away from traditional training to a performance-focused approach. This shift is necessary because the skills needed for most jobs changed by 41% between 2015 and 2024..."

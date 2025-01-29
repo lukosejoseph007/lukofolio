@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog #7: Differentiating Between Training and System Problems"
+title: "Differentiating Between Training and System Problems"
 date: 2024-03-23
 author: Lukose Joseph
 excerpt: "A key challenge for Learning Experience Design (LXD) professionals is determining whether a performance issue stems from a lack of knowledge or skills that can be addressed through training, or from systemic problems like flawed processes, inadequate tool..."

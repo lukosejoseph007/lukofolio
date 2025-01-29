@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog #4: Designing Impactful Learning Experiences"
+title: "Designing Impactful Learning Experiences"
 date: 2024-2-21
 author: Lukose Joseph
 excerpt: "In the field of Learning Experience Design (LXD), a common pitfall is focusing solely on the transfer of information. While conveying knowledge is a foundational aspect of learning..."

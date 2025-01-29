@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog #3: Performance-Based Lesson Mapping"
+title: "Performance-Based Lesson Mapping"
 date: 2024-02-11
 author: Lukose Joseph
 excerpt: "This chapter introduces a systematic approach to instructional design, emphasizing the importance of performance and practical application. It draws upon the work of thought leaders in performance improvement and instructional design..."

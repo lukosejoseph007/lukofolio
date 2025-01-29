@@ -26,6 +26,47 @@ bodyClass: "page-post"
                     {{ content }}
                 </div>
             </div>
+            <div class="post-navigation">
+                {% comment %} Reverse sort to get proper chronological order {% endcomment %}
+                {% assign posts = site.blog | sort: 'date' %}
+                
+                {% comment %} Find current post index {% endcomment %}
+                {% for post in posts %}
+                  {% if post.url == page.url %}
+                    {% assign current_index = forloop.index0 %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% comment %} Calculate previous/next indexes {% endcomment %}
+                {% assign prev_index = current_index | plus: 1 %}
+                {% assign next_index = current_index | minus: 1 %}
+                
+                {% comment %} Get previous/next posts {% endcomment %}
+                {% assign prev = posts[prev_index] %}
+                {% assign next = posts[next_index] %}
+              
+                <div class="nav-links">
+                  {% if prev %}
+                  <a href="{{ prev.url | relative_url }}" class="nav-previous">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>
+                      <small>Previous Article</small>
+                      <strong>{{ prev.title }}</strong>
+                    </span>
+                  </a>
+                  {% endif %}
+              
+                  {% if next %}
+                  <a href="{{ next.url | relative_url }}" class="nav-next">
+                    <span>
+                      <small>Next Article</small>
+                      <strong>{{ next.title }}</strong>
+                    </span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
         </div>
     </div>
 </div>
