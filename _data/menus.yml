@@ -5,11 +5,11 @@ main:
   - name: "Services"
     url: "/services/"
     weight: 2
-  - name: Blog
-    url: /blog/
-    weight: 3
   - name: "About"
     url: "/about/"
+    weight: 3
+  - name: Blog
+    url: /blog/
     weight: 4
   - name: "Contact"
     url: "/contact/"
@@ -19,12 +19,15 @@ footer:
   - name: "Home"
     url: "/"
     weight: 1
-  - name: "Contact"
-    url: "/contact/"
+  - name: "Services"
+    url: "/services/"
     weight: 2
-  - name: Blog
-    url: /blog/
-    weight: 3
   - name: "About"
     url: "/about/"
+    weight: 3
+  - name: Blog
+    url: /blog/
     weight: 4
+  - name: "Contact"
+    url: "/contact/"
+    weight: 5
