@@ -1,5 +1,5 @@
 ---
-title: "AI Literacy for Technical Leaders"
+title: "Learning Content Architecture"
 date: 2019-05-18T12:33:46+10:00
 weight: 7
 ---

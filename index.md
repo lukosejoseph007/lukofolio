@@ -11,4 +11,4 @@ show_call_box: true
 # Hi there! 
 # I'm <span style="color: #6C5CE7;">Luko</span>.
 
-I'm a <span style="color: #6C5CE7; font-style: italic;">Senior Learning Solutions Architect</span> specializing in bridging the gap between IT innovation and workforce readiness. I design practical, scalable learning strategies that empower IT teams and leaders to master emerging technologies, streamline workflows, and reduce risk.
+I'm a <span style="color: #6C5CE7; font-style: italic;">Senior Learning Solutions Architect</span>. I architect learning ecosystems where predictive analytics prevent skills gaps, LMS modernization boosts ROI, and executive dashboards turn data into strategy – all tailored for CLOs driving business-critical upskilling.
