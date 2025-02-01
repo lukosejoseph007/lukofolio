@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Browse Core Services",
+    "id": "core-services",
+    "description": "Customize your own solution with flexible options.",
+    "image": {
+      "url": "images/journey/noun-application-development-1885344.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Explore Popular Bundles",
+    "id": "popular-bundles",
+    "description": "Quick, ready-made fixes for common challenges.",
+    "image": {
+      "url": "images/journey/noun-prototyping-1885281.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Compare Pricing Plans",
+    "id": "pricing-plans",
+    "description": "Clear, straightforward tiers for easy decision-making.",
+    "image": {
+      "url": "images/journey/noun-global-economics-1885964.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

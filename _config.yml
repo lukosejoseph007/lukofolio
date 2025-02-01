@@ -23,6 +23,9 @@ collections:
   blog:
     output: true
     permalink: /blog/:title/
+  bundles:
+    output: true
+    permalink: /bundles/:path/
 
 defaults:
   - scope:

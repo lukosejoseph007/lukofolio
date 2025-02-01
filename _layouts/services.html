@@ -18,8 +18,116 @@ bodyClass: "page-services"
   </div>
 </div>
 
-<div class="container pt-6 pb-6">
-  <h1 class="title" style="text-align: center; padding-bottom: 70px;">Services I Offer Clients</h1>
+{% if site.data.journey %}
+<div class="strip strip-grey">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <h1 class="title" style="text-align: center;">🚀 Your Journey Starts Here 🌟</h1>
+    <p class="lead journey-para" style="text-align: center;">Choose the path that fits your needs:</p>
+    <div class="row justify-content-center">
+
+      {% for journey in site.data.journey %}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="journey">
+          {% if journey.image %}
+          <div class="journey-image"><img alt="{{ journey.title }} logo" src="{{ journey.image.url | relative_url }}" width="{{ journey.image.width }}" height="{{ journey.image.height }}" /></div>
+          {% endif %}
+          <h2 class="journey-title">
+            <a href="#{{ journey.id }}">{{ journey.title }}</a>
+          </h2>
+          <div class="journey-content">{{ journey.description }}</div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+
+<div id="core-services" class="container pt-6 pb-6">
+  <h1 class="title" style="text-align: center;">Core Services</h1>
+  <p class="lead" style="text-align: center;  padding-bottom: 70px;">Mix and match to solve your unique challenges.</p>
+  <div class="row">
+    {% for service in site.services %}
+    <div class="col-12 col-md-6 mb-3">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+          </h2>
+          <p>{{ service.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="strip strip-white">
+  <div id="popular-bundles" class="container pt-4 pb-8">
+    <h1 class="title text-center mb-2">Explore Popular Bundles</h1>
+    <p class="lead text-center text-muted mb-4">Tailored to your industry or goals</p>
+    
+    <div class="row g-4">
+      {% assign sorted_bundles = site.bundles | sort: 'weight' %}
+      {% for bundle in sorted_bundles %}
+      <div class="col-lg-4 col-md-6">
+        <div class="bundle-card d-flex flex-column">
+          <!-- Header Section -->
+          <div class="bundle-header mb-2">
+            <h2 class="bundle-title mb-2">
+              {{ bundle.title }}
+            </h2>
+            <span class="bundle-industry">{{ bundle.industry }}</span>
+          </div>
+          
+          <!-- Content Section -->
+          <div class="bundle-content flex-grow-1">
+            <!-- Includes Section -->
+            <div class="bundle-section mb-1">
+              <p class="section-label mb-2"><strong>Includes:</strong></p>
+              <ul class="list-unstyled mb-0">
+                {% for item in bundle.includes %}
+                <li class="d-flex align-items-center mb-2">
+                  <span class="me-2">▸</span>
+                  {{ item }}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            
+            <!-- Features Section -->
+            <div class="bundle-section mb-4">
+              <p class="section-label mb-2"><strong>Key Features:</strong></p>
+              <div class="d-flex flex-wrap gap-0_5">
+                {% for feature in bundle.features %}
+                <span class="badge bg-primary-soft text-primary">{{ feature }}</span>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          
+          <!-- Footer Section -->
+          <div class="bundle-footer mt-auto">
+            <div class="bundle-alignment mb-3">
+              Aligns with: {{ bundle.aligns_with | join: " • " }}
+            </div>
+            <div class="text-center">
+              <a href="{{ bundle.url | relative_url }}" class="btn btn-primary">View Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div id="pricing-plans" class="container pt-6 pb-6">
+  <h1 class="title" style="text-align: center">Compare Pricing Plans</h1>
+  <p class="lead" style="text-align: center;  padding-bottom: 70px;">Pricing That Scales With You</p>
   <div class="row">
     {% for service in site.services %}
     <div class="col-12 col-md-6 mb-3">

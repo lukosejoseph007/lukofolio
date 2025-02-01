@@ -1,0 +1,128 @@
+// Parent row and column styles to enable flexbox
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-4, .col-md-6 {
+  display: flex;
+}
+
+// Bundle card styles
+.bundle-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 400px;
+  background: $white;
+  border: 1px solid rgba($black, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba($black, 0.1);
+    background: $white-offset;
+  }
+
+  // Header styles
+  .bundle-header {
+    margin-bottom: 1rem;
+
+    .bundle-title {
+      font-family: $font-family-heading;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      margin: 0 0 0.25rem;
+      color: $primary;
+    }
+
+    .bundle-industry {
+      color: $steel;
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  // Content section styles
+  .bundle-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .section-label {
+      color: $steel;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .list-unstyled li {
+      font-size: 0.95rem;
+      line-height: 1.3;
+      margin-bottom: 0.5rem !important;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Badge styles
+  .badge {
+    padding: 0.35rem 0.75rem;
+    font-weight: 500;
+    margin: 0.25rem;
+  }
+
+  // Footer section with alignment and button
+  .bundle-footer {
+    margin-top: 1rem;
+    
+    .bundle-alignment {
+      background: rgba($secondary, 0.1);
+      color: darken($secondary, 20%);
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.75rem !important;
+    }
+  }
+
+  .gap-0_5 {
+    gap: 0.25rem; /* 4px */
+  }
+
+  // Button styles
+  .btn-primary {
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    background: #6C5CE7;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    
+    &:hover {
+      color: #ffffff;
+      background-color: #9488ee;
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+  }
+}
