@@ -52,13 +52,13 @@ bodyClass: "page-services"
   <div class="row">
     {% for service in site.services %}
     <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
+      <div class="service service-summary position-relative">
+        <a href="{{ service.url | relative_url }}" class="stretched-link text-decoration-none"> 
         <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-          </h2>
-          <p>{{ service.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+          <h2 class="service-title mb-3">{{ service.title }}</h2>
+          <p class="mb-0">{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
         </div>
+        </a>
       </div>
     </div>
     {% endfor %}
@@ -99,7 +99,7 @@ bodyClass: "page-services"
             </div>
             
             <!-- Features Section -->
-            <div class="bundle-section mb-4">
+            <div class="bundle-section mb-3">
               <p class="section-label mb-2"><strong>Key Features:</strong></p>
               <div class="d-flex flex-wrap gap-0_5">
                 {% for feature in bundle.features %}

@@ -22,25 +22,26 @@ bodyClass: "page-home"
 </div>
 
 <div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
+  <div class="container pt-6 pb-6 pb-md-10 text-center">
+    <h1 class="title" style="text-align: center; margin-bottom: 3rem;">My Services</h1>
     <div class="row justify-content-start">
       {% assign limit = site.home.limit_services | default: 3 %}
       {% for service in site.services limit: 3 %}
       <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
+        <div class="service service-summary position-relative">
+          <a href="{{ service.url | relative_url }}" class="stretched-link text-decoration-none"> 
           <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+            <h2 class="service-title mb-3">{{ service.title }}</h2>
+            <p class="mb-0">{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
           </div>
+          </a>
         </div>
       </div>
       {% endfor %}
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+        <a class="button button-primary" href="{{ "services" | relative_url }}">View Services in Detail</a>
       </div>
     </div>
   </div>
