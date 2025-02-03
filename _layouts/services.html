@@ -55,7 +55,7 @@ bodyClass: "page-services"
       <div class="service service-summary position-relative">
         <a href="{{ service.url | relative_url }}" class="stretched-link text-decoration-none"> 
         <div class="service-content">
-          <h2 class="service-title mb-3">{{ service.title }}</h2>
+          <h2 class="service-title mb-3" style="text-align: center;">{{ service.title }}</h2>
           <p class="mb-0">{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
         </div>
         </a>
