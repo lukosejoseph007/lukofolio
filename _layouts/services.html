@@ -85,6 +85,16 @@ bodyClass: "page-services"
           
           <!-- Content Section -->
           <div class="bundle-content flex-grow-1">
+            <!-- Implementation Timeline -->
+            {% if bundle.typical_implementation %}
+            <div class="bundle-section mb-2">
+              <p class="section-label mb-2"><strong>Typical Implementation:</strong></p>
+              <div class="implementation-timeline">
+                <i class="bi bi-calendar3 me-2"></i>
+                {{ bundle.typical_implementation }}
+              </div>
+            </div>
+            {% endif %}
             <!-- Includes Section -->
             <div class="bundle-section mb-1">
               <p class="section-label mb-2"><strong>Includes:</strong></p>
@@ -126,8 +136,8 @@ bodyClass: "page-services"
 </div>
 
 <div id="pricing-plans" class="container pt-6 pb-6">
-  <h1 class="title" style="text-align: center">Compare Pricing Plans</h1>
-  <p class="lead" style="text-align: center;  padding-bottom: 70px;">Pricing That Scales With You</p>
+  <h1 class="title" style="text-align: center">Strategic Advisory Plans</h1>
+  <p class="lead" style="text-align: center;  padding-bottom: 70px;">Tiered pricing plans that scale with you</p>
   <div class="row">
     {% for service in site.services %}
     <div class="col-12 col-md-6 mb-3">
