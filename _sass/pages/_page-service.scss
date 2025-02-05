@@ -15,11 +15,11 @@
 .info-tooltip {
   position: relative;
   margin-left: 5px;
-  cursor: help;
+  cursor: pointer;
 }
 
 .info-tooltip-icon {
-  color: $primary; 
+  color: $primary;
   font-size: 1em;
   vertical-align: super;
   font-weight: 600;
@@ -28,7 +28,7 @@
 }
 
 .info-tooltip-icon:hover {
-  color: $primary-dark; 
+  color: $primary-dark;
   opacity: 1;
 }
 
@@ -64,7 +64,49 @@
   background: rgba(51, 51, 51, 0.95);
 }
 
-.info-tooltip:hover .tooltip-content {
-  opacity: 1;
-  visibility: visible;
+/* Desktop hover behavior */
+@media (min-width: 768px) {
+  .info-tooltip:hover .tooltip-content {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .info-tooltip .tooltip-content {
+    width: 260px; /* Slightly smaller width for mobile */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+  }
+  
+  /* Hide the arrow on mobile since tooltip is centered */
+  .info-tooltip .tooltip-content::before {
+    display: none;
+  }
+
+  /* Active state for mobile tooltips */
+  .info-tooltip .tooltip-content.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Backdrop for mobile */
+  .tooltip-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+
+  .tooltip-backdrop.active {
+    display: block;
+  }
 }
