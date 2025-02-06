@@ -2,7 +2,7 @@
 title: "Compliance & Upskilling Special"
 industry: "For Healthcare, Tech, & Regulated Industries"
 weight: 2
-typical_implementation: "3-6 months" 
+typical_implementation: "8–12 weeks" 
 includes:
   - "Compliance tracking system configuration"
   - "Role-based learning paths setup"

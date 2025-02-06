@@ -1,0 +1,100 @@
+- name: Essential Plan
+  subtitle: Your first step toward learning excellence
+  price: $3,500–$6,000
+  features:
+    - title: Initial consultation and learning ecosystem assessment
+      tooltip: "I'll evaluate your current learning tools, processes, and needs through a structured 2-hour consultation."
+    - title: 3-month strategic advisory engagement
+      tooltip: "Regular guidance for 3 months to help you implement and optimize your learning initiatives."
+    - title: Bi-weekly strategy check-ins
+      tooltip: "30-minute calls every two weeks to review progress and address challenges."
+    - title: Basic learning analytics dashboard setup
+      tooltip: "A simple dashboard showing key metrics like course completion rates, learner progress, and basic engagement data."
+    - title: Implementation support for one service bundle of choice
+      tooltip: |
+        I'll guide you through implementing key elements of one bundle.<br>
+        For example, if you choose *Smart Learning Foundations*, this includes:<br>
+        <ul>
+        <li>Helping you select and set up a basic cloud LMS like TalentLMS</li>
+        <li>Creating one basic dashboard for completion tracking</li>
+        <li>Setting up 2-3 essential training templates.</li>
+        </ul>
+        **Note:** This is advisory support, not full done-for-you implementation.
+
+- name: Advanced Plan
+  subtitle: Accelerate your learning initiatives
+  price: $12,000–$20,000
+  features:
+    - title: Comprehensive learning needs assessment and roadmap creation
+      tooltip: "Deep-dive analysis of your learning needs and a detailed 6-month action plan."
+    - title: Custom analytics dashboard with ROI tracking
+      tooltip: |
+        A personalized dashboard showing your key metrics.<br>
+        **Example:** If employee retention is important, we'll track:<br>
+        <ul>
+        <li>Course completion rates by department</li>
+        <li>Skill development progress</li>
+        <li>Employee satisfaction scores.</li>
+        </ul>
+        **Includes:** Setup of 5-7 key metrics with monthly updates.
+    - title: Full bundle implementation with optimization support
+      tooltip: |
+        More comprehensive guidance for your chosen bundle.<br>
+        **Example:** For the Compliance bundle, this includes:<br>
+        <ul>
+        <li>Setting up automated compliance tracking for up to 5 course types</li>
+        <li>Creating role-based learning paths for 3 key roles</li>
+        <li>Monthly review of tracking data to suggest improvements.</li>
+        </ul>
+        **Includes:** 6 months of optimization support with monthly check-ins.
+    - title: Priority email support with 24-hour response
+      tooltip: "Get answers to your questions within one business day via priority email channel."
+    - title: Monthly strategy reviews and recommendations
+      tooltip: "1-hour monthly sessions analyzing progress and adjusting strategies based on data."
+
+- name: Premium Plan
+  subtitle: Transform your learning ecosystem
+  price: $25,000–$45,000+
+  features:
+    - title: In-depth learning ecosystem assessment and transformation strategy 
+      tooltip: |
+        Thorough analysis of your learning environment.<br>
+        **Includes:**<br>
+        <ul>
+        <li>Review of current LMS and tools</li>
+        <li>Analysis of up to 5 key learning programs</li>
+        <li>Interviews with up to 3 stakeholders</li>
+        <li>Gap analysis report.</li>
+        </ul>
+        **Timeline:** 2-3 weeks for completion.
+    - title: Multiple bundle implementation with continuous optimization 
+      tooltip: |
+        Mix services from different bundles with ongoing support.<br>
+        **Example:** You could combine:<br>
+        <ul>
+        <li>Compliance tracking setup from the Compliance bundle with</li>
+        <li>Program design from the Learning Program Accelerator.</li>
+        </ul>
+        Up to 3 major services can be combined.<br>
+        **Includes:** Quarterly optimization meetings to enhance each service based on usage data.
+    - title: Advanced analytics suite with trend analysis 
+      tooltip: |
+        Comprehensive analytics package tracking multiple aspects.<br>
+        **Example:**<br>
+        <ul>
+        <li>Learning impact on sales performance</li>
+        <li>Department-wise engagement patterns</li>
+        <li>Skill development tracking across teams.</li>
+        </ul>
+        **Includes:** Setup of 10-12 metrics with bi-weekly updates and trend reports.
+    - title: Monthly strategic planning sessions 
+      tooltip: "2-hour monthly deep-dives into strategy, including stakeholder alignment and progress tracking."
+    - title: Quarterly ROI analysis and executive reports 
+      tooltip: "Detailed quarterly reports showing learning impact on business goals, with executive summaries."
+    - title: Annual learning strategy revision 
+      tooltip: "Complete review and update of your learning strategy based on the year's data and changing business needs."
+    - title: Priority support with same-day response
+      tooltip: |
+        Fast-track support during business hours (9 AM - 5 PM EST).<br>
+        **Example:** If you have LMS access issues or need urgent report updates, you'll get a response within 4 business hours.<br>
+        **Note:** This is not 24/7 support.

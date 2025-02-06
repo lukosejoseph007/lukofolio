@@ -136,20 +136,43 @@ bodyClass: "page-services"
 </div>
 
 <div id="pricing-plans" class="container pt-6 pb-6">
-  <h1 class="title" style="text-align: center">Strategic Advisory Plans</h1>
-  <p class="lead" style="text-align: center;  padding-bottom: 70px;">Tiered pricing plans that scale with you</p>
-  <div class="row">
-    {% for service in site.services %}
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-          </h2>
-          <p>{{ service.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+  <h1 class="title text-center">Strategic Advisory Plans</h1>
+  <p class="lead text-center pb-5">Tiered pricing plans that scale with you</p>
+
+  <div class="row pricing-plans">
+    {% for plan in site.data.strategic_plans %}
+      <div class="col-12">
+        <div class="plan-card {% if forloop.index == 2 %}highlighted{% endif %}">
+          <div class="plan-header">
+            <h3 class="plan-title">{{ plan.name }}</h3>
+            <p class="plan-subtitle">{{ plan.subtitle }}</p>
+            <p class="plan-price">{{ plan.price }}</p>
+          </div>
+
+          <div class="features-list">
+            {% for feature in plan.features %}
+              <div class="feature-item">
+                <div class="feature-header" 
+                     data-bs-toggle="collapse" 
+                     href="#feature-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                  <span class="feature-title">{{ feature.title }}</span>
+                  <i class="accordion-icon fas fa-chevron-down"></i>
+                </div>
+                <div class="collapse feature-content" 
+                     id="feature-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                  {{ feature.tooltip | markdownify | replace: "<p>", "" | replace: "</p>", "" }}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+          <div class="plan-footer">
+            <a href="/contact" class="btn btn-primary">
+              Schedule Free Call
+            </a>
+          </div>
         </div>
       </div>
-    </div>
     {% endfor %}
   </div>
 </div>

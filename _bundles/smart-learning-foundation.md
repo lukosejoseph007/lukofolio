@@ -2,7 +2,7 @@
 title: "Smart Learning Foundations"
 industry: "For Startups & SMEs"
 weight: 1
-typical_implementation: "2-3 months" 
+typical_implementation: "3–5 weeks" 
 includes:
   - "Cloud-based LMS selection and setup"
   - "Basic analytics dashboard implementation"

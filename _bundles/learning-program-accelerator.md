@@ -2,7 +2,7 @@
 title: "Learning Program Accelerator"
 industry: "For Growing Teams & Targeted Needs"
 weight: 3
-typical_implementation: "6+ months" 
+typical_implementation: "12–16 weeks" 
 includes:
   - "Strategic learning program design"
   - "Optimized learning tech stack"
