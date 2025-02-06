@@ -32,3 +32,31 @@
 .journey-para {
   margin-bottom: 3rem !important;
 }
+
+.curved-section-journey {
+  position: relative;
+  background-color: $white-offset;
+  padding-bottom: 50px;
+}
+
+.curved-section-journey::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Height of the curve */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C50,100 50,100 100,0 L100,100 L0,100 Z' fill='%23FDFDFD'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+}
+
+/* Hide curve on mobile */
+@media (max-width: 768px) {
+  .curved-section-journey {
+      padding-bottom: 0; /* Remove padding if it was only for curve */
+  }
+  
+  .curved-section-journey::after {
+      display: none; /* Hide the curve */
+  }
+}

@@ -16,5 +16,5 @@
     "**/.jekyll-cache": true
   },
   "editor.tabSize": 2,
-  "svg.preview.background": "editor"
+  "svg.preview.background": "transparent"
 }

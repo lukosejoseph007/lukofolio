@@ -1,27 +1,27 @@
 [
   {
-    "title": "Free Strategy Session",
-    "description": "Start with a no-obligation consultation to identify your IT training priorities and build a roadmap.",
+    "title": "Free Discovery Session",
+    "description": "Explore your learning ecosystem challenges in a focused consultation call.",
     "image": {
-      "url": "images/features/noun_branding_1885335.svg",
+      "url": "images/features/noun-information-security-1851305.svg",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Certified Expertise",
-    "description": "Extensive experience designing IT learning programs, with certifications in cloud architecture (AWS/Azure) and cybersecurity (CISSP)",
+    "title": "Learning ROI Focus",
+    "description": "Align learning initiatives with measurable business outcomes.",
     "image": {
-      "url": "images/features/noun_The Process_1885341.svg",
+      "url": "images/features/noun-progress-1851323.svg",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Compliance-Aligned Training",
-    "description": "Programs tailored to meet GDPR, ISO 27001, and SOC 2 standards, minimizing risk while keeping teams engaged.",
+    "title": "Expert Implementation",
+    "description": "Turn learning strategies into practical, scalable solutions.",
     "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
+      "url": "images/features/noun-swot-analysis-1849876.svg",
       "width": 80,
       "height": 80
     }

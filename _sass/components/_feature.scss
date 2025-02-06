@@ -3,7 +3,7 @@
   border: 1px solid $white-offset;
   border-radius: 3px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #ffffff00;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,5 +25,33 @@
   .feature-content {
     margin-bottom: 0;
     margin-top: auto;
+  }
+}
+
+.curved-section {
+  position: relative;
+  background-color: $white-offset;
+  padding-bottom: 50px;
+}
+
+.curved-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Height of the curve */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C50,100 50,100 100,0 L100,100 L0,100 Z' fill='white'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+}
+
+/* Hide curve on mobile */
+@media (max-width: 768px) {
+  .curved-section {
+      padding-bottom: 0; /* Remove padding if it was only for curve */
+  }
+  
+  .curved-section::after {
+      display: none; /* Hide the curve */
   }
 }
