@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Navigating the Journey from Novice to Expert"
-date: 2024-3-7
+date: 2024-03-07
 author: Lukose Joseph
 excerpt: "The journey from novice to expert is a fundamental concept in Learning Experience Design (LXD). Understanding the stages of proficiency helps LXD professionals create targeted and effective learning experiences. This chapter will explore the various stages of proficiency, from initial exposure to mastery, and discus..."
 ---

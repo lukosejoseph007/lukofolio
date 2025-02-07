@@ -1,0 +1,63 @@
+.post-item {
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(108, 92, 231, 0.1);
+  margin-bottom: 1rem;
+}
+
+li.page-item::marker {
+  list-style: none !important;
+}
+
+ul#pagination.pagination.justify-content-center {
+  list-style: none !important;
+}
+
+.post-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.1);
+}
+
+.post-title {
+  color: $primary;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #636E72;
+}
+
+.post-excerpt {
+  font-size: 0.95rem;
+  color: #2D3436;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.pagination .page-link {
+  color: #6C5CE7;
+  text-decoration: none;
+}
+
+.pagination .active .page-link {
+  background-color: #6C5CE7;
+  border-color: #6C5CE7;
+  color: $white;
+}
+
+.pagination .disabled .page-link {
+  color: #b2bec3;
+  pointer-events: none;
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+#postCount {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #636E72;
+}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Why is Learning Non-Linear"
-date: 2024-2-27
+title: "Why is Learning Non-Linear?"
+date: 2024-02-27
 author: Lukose Joseph
-excerpt: "In the field of Learning Experience Design (LXD), it’s tempting to envision the learning journey as a straight path from point A to point B. However, the reality is far more complex and unpredictable..."
+excerpt: "When designing learnings, it’s tempting to envision the learning journey as a straight path from point A to point B. However, the reality is far more complex and unpredictable..."
 ---
 
 ## Introduction
-In the field of Learning Experience Design (LXD), it’s tempting to envision the learning journey as a straight path from point A to point B. However, the reality is far more complex and unpredictable. Learning is not a neat, linear process, but rather a messy, iterative, and often circuitous journey. This chapter will delve into the non-linear nature of learning, exploring the reasons why it’s messy and providing practical insights for designing more effective and adaptable learning experiences. We will also examine how the concept of "complex skills" impacts the design process and how to support learners as they navigate the complexities of real-world application.
+When designing learnings, it’s tempting to envision the learning journey as a straight path from point A to point B. However, the reality is far more complex and unpredictable. Learning is not a neat, linear process, but rather a messy, iterative, and often circuitous journey. This chapter will delve into the non-linear nature of learning, exploring the reasons why it’s messy and providing practical insights for designing more effective and adaptable learning experiences. We will also examine how the concept of "complex skills" impacts the design process and how to support learners as they navigate the complexities of real-world application.
 
 ![Learning Process Image Illustration](/lukofolio/images/illustrations/learning-process.svg)
 

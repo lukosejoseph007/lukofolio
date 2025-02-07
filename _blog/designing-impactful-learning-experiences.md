@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Designing Impactful Learning Experiences"
-date: 2024-2-21
+date: 2024-02-21
 author: Lukose Joseph
-excerpt: "In the field of Learning Experience Design (LXD), a common pitfall is focusing solely on the transfer of information. While conveying knowledge is a foundational aspect of learning..."
+excerpt: "A common pitfall in organizational learning and development is focusing solely on the transfer of information. While conveying knowledge is a foundational aspect of learning..."
 ---
 
 ## Introduction
-In the field of Learning Experience Design (LXD), a common pitfall is focusing solely on the transfer of information. While conveying knowledge is a foundational aspect of learning, it is insufficient to produce meaningful change in learners' behaviors. This chapter explores how to move beyond simply delivering content and instead focus on designing experiences that foster real behavioral shifts. We will examine the principles of behavioral science, the importance of understanding learners' motivations, and the practical strategies for creating impactful interventions. This will equip you, as future LXD professionals, to design learning experiences that create lasting change.
+A common pitfall in organizational learning and development is focusing solely on the transfer of information. While conveying knowledge is a foundational aspect of learning, it is insufficient to produce meaningful change in learners' behaviors. This chapter explores how to move beyond simply delivering content and instead focus on designing experiences that foster real behavioral shifts. We will examine the principles of behavioral science, the importance of understanding learners' motivations, and the practical strategies for creating impactful interventions. This will equip you, as future LXD professionals, to design learning experiences that create lasting change.
 
 ![Impactful Learning Illustration](/lukofolio/images/illustrations/impactful-learning.svg)
 
