@@ -26,18 +26,20 @@ bodyClass: "page-services"
     <div class="row justify-content-center">
 
       {% for journey in site.data.journey %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="journey">
-          {% if journey.image %}
-          <div class="journey-image"><img alt="{{ journey.title }} logo" src="{{ journey.image.url | relative_url }}" width="{{ journey.image.width }}" height="{{ journey.image.height }}" /></div>
-          {% endif %}
-          <h2 class="journey-title">
-            <a href="#{{ journey.id }}">{{ journey.title }}</a>
-          </h2>
-          <div class="journey-content">{{ journey.description }}</div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+        <div class="journey w-100">
+          <a href="#{{ journey.id }}" class="stretched-link text-decoration-none d-flex flex-column align-items-center justify-content-center">
+            {% if journey.image %}
+              <div class="journey-image">
+                <img alt="{{ journey.title }} logo" src="{{ journey.image.url | relative_url }}" width="{{ journey.image.width }}" height="{{ journey.image.height }}" class="img-fluid" />
+              </div>
+            {% endif %}
+            <h2 class="journey-title">{{ journey.title }}</h2>
+            <div class="journey-content">{{ journey.description }}</div>
+          </a>
         </div>
       </div>
-      {% endfor %}
+    {% endfor %}
 
     </div>
   </div>
@@ -139,9 +141,9 @@ bodyClass: "page-services"
   <h1 class="title text-center">Strategic Advisory Plans</h1>
   <p class="lead text-center pb-5">Tiered pricing plans that scale with you</p>
 
-  <div class="row pricing-plans">
+  <div class="row">
     {% for plan in site.data.strategic_plans %}
-      <div class="col-12">
+      <div class="col-md-4 mb-4"> <!-- Use col-md-4 for 3 columns and mb-4 for spacing -->
         <div class="plan-card {% if forloop.index == 2 %}highlighted{% endif %}">
           <div class="plan-header">
             <h3 class="plan-title">{{ plan.name }}</h3>

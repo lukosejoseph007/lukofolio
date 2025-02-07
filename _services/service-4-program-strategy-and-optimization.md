@@ -2,6 +2,7 @@
 title: "Program Strategy & Optimization"
 date: 2019-02-28T15:15:34+10:00
 weight: 3
+icon: "program-strategy.svg"
 ---
 
 Cut IT onboarding time by 50% with **plug-and-play labs, troubleshooting guides, and milestone tracking** for new engineers.

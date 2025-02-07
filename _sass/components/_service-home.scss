@@ -80,9 +80,9 @@
 
 .service-content p {
   color: $steel;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
   margin-bottom: 0;
   transition: color 0.3s ease;
 }
@@ -98,4 +98,31 @@
 
 .row.justify-content-start {
   margin: 0 -1em;
+}
+
+
+.service-icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.service-icon .icon {
+  width: 80px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+}
+
+/* Default color for the SVG icon */
+.service-icon .icon {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(89%) saturate(748%) hue-rotate(218deg) brightness(93%) contrast(91%);
+  transition: filter 0.3s ease; /* Smooth transition */; /* Default color */
+  transition: fill 0.3s ease; /* Smooth transition */
+}
+
+/* Hover color for the SVG icon */
+.service.service-summary:hover .service-icon .icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Change to white on hover */
+}
+
+a.button.button-primary {
+  margin-top: 3rem;
 }

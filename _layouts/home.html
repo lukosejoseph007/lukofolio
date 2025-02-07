@@ -25,14 +25,17 @@ bodyClass: "page-home"
   <div class="container pt-6 pb-6 pb-md-10 text-center">
     <h1 class="title" style="text-align: center; margin-bottom: 3rem;">What I Do.</h1>
     <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 3 %}
-      {% for service in site.services limit: 3 %}
-      <div class="col-12 col-md-4 mb-1">
+      {% assign limit = site.home.limit_services | default: 4 %}
+      {% for service in site.services limit: 4 %}
+      <div class="col-12 col-md-3 mb-1">
         <div class="service service-summary position-relative">
           <a href="{{ service.url | relative_url }}" class="stretched-link text-decoration-none"> 
           <div class="service-content">
+            <div class="service-icon">
+              <img src="{{ '/images/service-icons/' | relative_url }}{{ service.icon }}" alt="{{ service.title }} icon" class="icon">
+            </div>
             <h2 class="service-title mb-3">{{ service.title }}</h2>
-            <p class="mb-0">{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+            <!-- <p class="mb-0">{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p> -->
           </div>
           </a>
         </div>

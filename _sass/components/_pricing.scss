@@ -1,40 +1,44 @@
 .pricing-plans {
-  .plan-card {
-    background: $white;
-    border: 1px solid rgba($black, 0.1);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    transition: all 0.3s ease;
+  /* No custom Flexbox properties needed here */
+}
 
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 16px rgba($black, 0.08);
-    }
+.plan-card {
+  background: $white;
+  border: 1px solid rgba($black, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  height: 100%; /* Ensure all cards have the same height */
+  display: flex;
+  flex-direction: column;
 
-    &.highlighted {
-      border: 2px solid $primary;
-      overflow: hidden;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba($black, 0.08);
+  }
 
-      &::after {
-        content: 'Popular Choice';
-        position: absolute;
-        top: 25px;
-        right: -32px;
-        width: 150px;
-        background: $primary;
-        color: $white;
-        padding: 0.5rem 0;
-        font-size: 0.75rem;
-        font-weight: 600;
-        transform: rotate(45deg);
-        text-align: center;
-        z-index: 10;
-        clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
-        box-shadow: 0 2px 8px rgba($black, 0.1);
-        line-height: 1.2;
-      }
+  &.highlighted {
+    border: 2px solid $primary;
+    overflow: hidden;
+
+    &::after {
+      content: 'Popular Choice';
+      position: absolute;
+      top: 25px;
+      right: -32px;
+      width: 150px;
+      background: $primary;
+      color: $white;
+      padding: 0.5rem 0;
+      font-size: 0.75rem;
+      font-weight: 600;
+      transform: rotate(45deg);
+      text-align: center;
+      z-index: 10;
+      clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+      box-shadow: 0 2px 8px rgba($black, 0.1);
+      line-height: 1.2;
     }
   }
 
@@ -72,6 +76,7 @@
   }
 
   .features-list {
+    flex-grow: 1; /* Allow the features list to grow and push the footer down */
     margin: 1.5rem 0;
 
     .feature-item {
@@ -105,7 +110,7 @@
   }
 
   .feature-content {
-    white-space: pre-line;
+    // white-space: pre-line;
     padding: 0.75rem 1rem;
     background: rgba($steel, 0.03);
     border-radius: 8px;
@@ -123,6 +128,11 @@
       margin-bottom: 8px;
     }
   }
+
+  .plan-footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    text-align: center; /* Center the button */
+  }
 }
 
 .btn-primary {
@@ -130,8 +140,14 @@
   padding: 0.875rem;
   border-radius: 6px;
   transition: all 0.2s ease;
-  
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: $primary;
+  border: none;
+  color: $white;
+
   &:hover {
     transform: translateY(-2px);
+    background-color: darken($primary, 10%);
   }
 }

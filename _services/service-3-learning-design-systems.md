@@ -2,6 +2,7 @@
 title: "Learning Design Systems"
 date: 2019-01-28T15:15:26+10:00
 weight: 2
+icon: "learning-design-systems.svg"
 ---
 
 Equip teams with **cloud migration playbooks, troubleshooting guides, and sandbox environments** to reduce downtime and errors.

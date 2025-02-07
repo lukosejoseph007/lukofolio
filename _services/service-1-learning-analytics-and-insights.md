@@ -2,6 +2,7 @@
 title: "Learning Analytics & Insights"
 date: 2018-11-18T12:33:46+10:00
 weight: 1
+icon: "learning-analytics.svg"
 ---
 
 Align your IT workforce with business goals through **data-driven skill audits and actionable upskilling plans** for cloud, cybersecurity, and AI.

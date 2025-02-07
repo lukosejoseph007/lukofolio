@@ -7,26 +7,71 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
-  .journey-image {
-    flex: 0 0 auto;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .journey-title {
-    color:$primary-dark;
-  }
-  .journey-content {
-    margin-bottom: 0;
-    margin-top: auto;
-  }
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Required for stretched-link to work */
+  width: 100%; /* Ensure the card takes full width of its container */
+  max-width: 350px; /* Optional: Set a max-width for uniformity */
+  margin: 0 auto; /* Center the card horizontally */
+}
+
+.journey a {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit text color */
+  display: flex; /* Make the link a flex container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  width: 100%; /* Ensure the link covers the entire card */
+  height: 100%; /* Ensure the link covers the entire card */
+}
+
+.journey-image {
+  flex: 0 0 auto; /* Prevent the image from shrinking or growing */
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  margin-bottom: 20px; /* Add spacing below the image */
+}
+
+.journey-image img {
+  width: 100%;
+  height: auto;
+  /* Default color: #636E72 */
+  filter: invert(42%) sepia(9%) saturate(828%) hue-rotate(169deg) brightness(93%) contrast(89%);
+  transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Apply hover effect to the image when the link is hovered */
+.journey a:hover .journey-image img {
+  /* Hover color: #4834D4 */
+  filter: invert(25%) sepia(98%) saturate(2591%) hue-rotate(234deg) brightness(91%) contrast(91%);
+}
+
+.journey-title {
+  color: $primary-dark;
+  margin-bottom: 0.5rem; /* Add spacing below the title */
+}
+
+.journey-title a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.journey-content {
+  color: $steel;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+  margin-top: auto; /* Push content to the bottom */
+}
+
+.journey:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
 
 .journey-para {
@@ -53,10 +98,10 @@
 /* Hide curve on mobile */
 @media (max-width: 768px) {
   .curved-section-journey {
-      padding-bottom: 0; /* Remove padding if it was only for curve */
+    padding-bottom: 0; /* Remove padding if it was only for curve */
   }
-  
+
   .curved-section-journey::after {
-      display: none; /* Hide the curve */
+    display: none; /* Hide the curve */
   }
 }
