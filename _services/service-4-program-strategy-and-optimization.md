@@ -1,5 +1,5 @@
 ---
-title: "🚀 Program Strategy & Optimization"
+title: "Program Strategy & Optimization"
 date: 2019-02-28T15:15:34+10:00
 weight: 3
 ---
