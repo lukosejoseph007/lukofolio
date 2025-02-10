@@ -137,17 +137,26 @@
 
 .btn-primary {
   width: 100%;
-  padding: 0.875rem;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: $primary;
-  border: none;
-  color: $white;
-
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  background: #6C5CE7;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  
   &:hover {
-    transform: translateY(-2px);
-    background-color: darken($primary, 10%);
+    color: #ffffff;
+    background-color: #9488ee;
+    transform: translateY(-1px);
+    text-decoration: none;
   }
 }
