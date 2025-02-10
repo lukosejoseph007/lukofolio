@@ -58,7 +58,7 @@ bodyClass: "page-services"
         <a href="{{ service.url | relative_url }}" class="stretched-link text-decoration-none"> 
         <div class="service-content">
           <h2 class="service-title mb-3" style="text-align: center;">{{ service.title }}</h2>
-          <p class="mb-0">{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+          <p class="mb-0">{{ service.description | markdownify | strip_html | truncate: 100 }}</p>
         </div>
         </a>
       </div>
@@ -303,9 +303,9 @@ bodyClass: "page-services"
   <div class="container pt-6 pb-6">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 text-center">
-        <h2>Read My Blog</h2>
-        <p class="mb-4">Discover insightful articles on organizational learning & development initiatives and transformations.</p>
-        <a class="button button-primary" href="{{ "blog" | relative_url }}">Read All Articles</a>
+        <h2 class="whats-next">What’s Next?</h2>
+        <p>Schedule a free discovery call to uncover opportunities in your learning ecosystem and drive meaningful impact.</p>
+        <a class="button button-primary" href="{{ "contact" | relative_url }}">Let's Talk</a>
       </div>
     </div>
   </div>

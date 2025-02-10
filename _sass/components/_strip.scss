@@ -8,6 +8,11 @@
 .strip-grey {
   background-color: $white-offset;
 }
+
+.strip-success {
+  background: rgba($primary, 0.05);
+}
+
 .strip-diagonal {
   transform: skewY(5deg);
   padding-bottom: 50px;

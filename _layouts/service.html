@@ -3,12 +3,143 @@ layout: default
 bodyClass: "page-service"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single">
-        <h1 class="title">{{page.title}}</h1>
-        <div class="content">{{content}}</div>
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <h3 style="color: #6C5CE7; font-weight: 700;"> {{ page.title }} </h3>
+        <h1 class="service-item-title">{{ page.tagline }}</h1>
+        <p class="service-item-subtitle">{{ page.description }}</p>
+        <!-- <a href="/contact" class="btn btn-primary service-item-cta">Book a Discovery Call</a> -->
+      </div>
+      {% if page.intro_image %}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="strip strip-white">
+  <div class="container service-item-overview">
+    <div class="row">
+      <div class="col-12">
+        <h2>Service at a Glance</h2>
+        <p>{{ page.overview }}</p>
+        <h3>Key Benefits</h3>
+        <ul>
+          {% for benefit in page.benefits %}
+          <li>{{ benefit }}</li>
+          {% endfor %}
+        </ul>
+        <h3>Target Audience</h3>
+        <p>{{ page.target_audience }}</p>
+        <h3>Common Challenges Addressed</h3>
+        <ul>
+          {% for challenge in page.challenges %}
+          <li>{{ challenge }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="strip strip-grey">
+  <div class="container service-item-approach">
+    <h2>My Approach</h2>
+    <div class="row">
+      {% for step in page.approach %}
+      <div class="col-md-6 approach-step">
+        <div class="step-number">{{ loop.index }}</div>
+        <div class="step-content">
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="strip strip-white">
+  <div class="container service-item-features">
+    <h2>Features & Deliverables</h2>
+    <div class="features-list">
+      {% for feature in page.features %}
+      <div class="feature-item">
+        <div class="feature-icon">&#10003;</div>
+        <div class="feature-description">{{ feature }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <p style="margin-top: 4rem;"><strong>Integration Options:</strong><br>{{ page.integration }}</p>
+  </div>
+</div>
+
+<!-- <div class="container service-item-integration">
+  <h2>Integration Options</h2>
+  <p>{{ page.integration }}</p>
+</div> -->
+
+<div class="strip strip-success">
+  <div class="container service-item-success">
+    <h2>Success Story</h2>
+    <blockquote>{{ page.success_story }}</blockquote>
+  </div>
+</div>
+
+<div class="strip strip-white">
+  <div class="container service-item-investment">
+    <h2>Investment Options</h2>
+    <div class="comparison-cards">
+      {% for package in page.packages %}
+      <div class="service-item-package">
+        <div class="package-name"><h3>{{ package.name }}</h3></div>
+        <div class="package-details">
+          <ul>
+            {% for detail in package.details %}
+            <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="package-price">
+          <a href="#" class="btn-primary">{{ package.price }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="strip strip-grey">
+  <div class="container service-item-faq">
+    <h2>FAQs</h2>
+    <div class="accordion" id="faqAccordion">
+      {% for faq in page.faqs %}
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faq{{ forloop.index }}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.index }}" aria-expanded="false" aria-controls="collapse{{ forloop.index }}">
+            {{ faq.question }}
+          </button>
+        </h3>
+        <div id="collapse{{ forloop.index }}" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">{{ faq.answer }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center">
+        <h2 class="whats-next">What’s Next?</h2>
+        <p>Schedule a free discovery call to uncover opportunities in your learning ecosystem and drive meaningful impact.</p>
+        <a class="button button-primary" href="{{ "contact" | relative_url }}">Let's Talk</a>
       </div>
     </div>
   </div>
