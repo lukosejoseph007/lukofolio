@@ -127,7 +127,7 @@ bodyClass: "page-services"
               Aligns with: {{ bundle.aligns_with | join: " • " }}
             </div>
             <div class="text-center">
-              <a href="{{ bundle.url | relative_url }}" class="btn btn-primary">View Package</a>
+              <a href="{{ "contact" | relative_url }}" class="btn btn-primary">Consult Now</a>
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@ bodyClass: "page-services"
           </div>
 
           <div class="plan-footer">
-            <a href="/contact" class="btn btn-primary">
+            <a href="{{ "contact" | relative_url }}" class="btn btn-primary">
               Schedule Free Call
             </a>
           </div>
